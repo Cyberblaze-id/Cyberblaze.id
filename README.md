@@ -46,9 +46,9 @@ Although this website is primarily for showcasing my services and knowledge, fee
 
 For inquiries, services, or collaborations, you can contact me through:
 
-- **Email**: [contact@cyberblaze.id](mailto:contact@cyberblaze.id)
-- **Website**: [www.cyberblaze.id](https://www.cyberblaze.id)
-- **LinkedIn**: [Cyberblaze.id on LinkedIn](https://www.linkedin.com/in/cyberblaze-id) (if applicable)
+- **Email**: [blazeheartinferno@gmail.com](mailto:blazeheartinferno@gmail.com)
+- **Website**: [https://cyberblaze-id.github.io/Cyberblaze.id/](https://cyberblaze-id.github.io/Cyberblaze.id/)
+- **LinkedIn**: [Owner on LinkedIn](https://www.linkedin.com/in/heyfin13/) (if applicable)
 
 Feel free to reach out for any cybersecurity-related questions or requests!
 
