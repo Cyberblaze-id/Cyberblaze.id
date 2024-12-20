@@ -39,3 +39,18 @@ function sanitizeInput(input) {
   return temp.innerHTML;
 }
 const safeContent = sanitizeInput(userInput);
+
+//JavaScript untuk Fungsionalitas
+const menuBtn = document.getElementById('menu-btn');
+const navbar = document.getElementById('navbar');
+
+// Debugging untuk memeriksa apakah elemen ditemukan
+if (menuBtn && navbar) {
+  menuBtn.addEventListener('click', () => {
+    console.log('Hamburger menu clicked!'); // Debugging klik
+    navbar.classList.toggle('active'); // Toggle kelas 'active'
+  });
+} else {
+  console.error('Menu button or navbar not found!');
+}
+
