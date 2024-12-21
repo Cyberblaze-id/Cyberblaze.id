@@ -1,61 +1,48 @@
 # Cyberblaze.id
 
-Welcome to the official website of **Cyberblaze.id**, your trusted partner in cybersecurity and ethical hacking. Cyberblaze.id is dedicated to providing comprehensive services, tools, and educational resources to help individuals and organizations secure their digital assets.
+Selamat datang di situs resmi Cyberblaze.id, mitra terpercaya Anda dalam bidang keamanan siber dan peretasan etis. Cyberblaze.id didedikasikan untuk menyediakan layanan komprehensif, alat, dan sumber daya edukasi untuk membantu individu dan organisasi mengamankan aset digital mereka.
 
-Visit the live site: [https://cyberblaze-id.github.io/Cyberblaze.id/](https://cyberblaze-id.github.io/Cyberblaze.id/)
+Kunjungi situs langsung: [https://cyberblaze-id.github.io/Cyberblaze.id/](https://cyberblaze-id.github.io/Cyberblaze.id/)
 
-## About Cyberblaze.id
+## Tentang Cyberblaze.id
 
-Cyberblaze.id is a one-man cybersecurity platform offering a range of services aimed at improving digital security through:
+Cyberblaze.id adalah platform keamanan siber satu orang yang menawarkan berbagai layanan yang bertujuan untuk meningkatkan keamanan digital melalui:
 
-- **Penetration Testing**: Identifying vulnerabilities in systems and applications.
-- **Security Audits**: Comprehensive assessments of digital infrastructures.
-- **Exploit Research and Development**: Researching and testing new exploits and vulnerabilities.
-- **Cybersecurity Consulting**: Providing expert advice and solutions to strengthen defenses.
+- **Penetration Testing**: Mengidentifikasi kerentanannya di sistem dan aplikasi.
+- **Security Audits**: Penilaian menyeluruh terhadap infrastruktur digital.
+- **Exploit Research and Development**: Meneliti dan menguji eksploitasi serta kerentanannya yang baru.
+- **Cybersecurity Consulting**: Memberikan saran dan solusi ahli untuk memperkuat pertahanan.
+Situs ini berfungsi sebagai pusat sumber daya, menampilkan artikel, alat, dan tutorial untuk membantu pengguna meningkatkan pengetahuan dan keterampilan mereka dalam peretasan etis.
 
-The website serves as a resource hub, featuring articles, tools, and tutorials to help users improve their knowledge and skills in ethical hacking.
+## Fitur
 
-## Features
+- **Services Overview**: Pelajari tentang layanan keamanan siber yang saya tawarkan, termasuk penetration testing, audit keamanan, dan konsultasi.
+- **Portfolio**: Lihat showcase proyek-proyek dan studi kasus yang menyoroti pekerjaan serta keahlian saya.
+- **Blog & Resources**: Akses tutorial, panduan, dan artikel tentang tren terbaru dalam keamanan siber dan peretasan.
+- **Contact Information**: Mudah menghubungi saya untuk kolaborasi, pertanyaan, atau layanan.
 
-- **Services Overview**: Learn about the cybersecurity services I offer, including penetration testing, security audits, and consulting.
-- **Portfolio**: View a showcase of past projects and case studies that highlight my work and expertise.
-- **Blog & Resources**: Access tutorials, guides, and articles on the latest trends in cybersecurity and hacking.
-- **Contact Information**: Easily get in touch for collaborations, inquiries, or services.
+## Memulai
 
-## Getting Started
-
-To explore the website, simply visit the link below:
+Untuk menjelajahi situs, cukup kunjungi tautan berikut:
 
 [https://cyberblaze-id.github.io/Cyberblaze.id/](https://cyberblaze-id.github.io/Cyberblaze.id/)
 
-The website is designed to provide you with information on various aspects of cybersecurity and ethical hacking, as well as a way to contact me for professional services.
+Situs ini dirancang untuk memberikan informasi tentang berbagai aspek keamanan siber dan peretasan etis, serta cara menghubungi saya untuk layanan profesional.
 
-## Contributing
+## Kontak
 
-Although this website is primarily for showcasing my services and knowledge, feel free to contribute if you find useful tools or resources that could benefit others. Contributions to the repository are welcome.
-
-### How to Contribute:
-- Fork this repository
-- Create a new branch (`git checkout -b feature-branch`)
-- Make your changes
-- Commit your changes (`git commit -am 'Add feature or update content'`)
-- Push to the branch (`git push origin feature-branch`)
-- Create a Pull Request
-
-## Contact
-
-For inquiries, services, or collaborations, you can contact me through:
+Untuk pertanyaan, layanan, atau kolaborasi, Anda bisa menghubungi saya melalui:
 
 - **Email**: [blazeheartinferno@gmail.com](mailto:blazeheartinferno@gmail.com)
 - **Website**: [https://cyberblaze-id.github.io/Cyberblaze.id/](https://cyberblaze-id.github.io/Cyberblaze.id/)
 - **LinkedIn**: [Owner on LinkedIn](https://www.linkedin.com/in/alfindoangan/) 
 
-Feel free to reach out for any cybersecurity-related questions or requests!
+Jangan ragu untuk menghubungi saya untuk pertanyaan atau permintaan yang berhubungan dengan keamanan siber!
 
 ## Disclaimer
 
-All content on this website is for educational and ethical hacking purposes. Any use of the tools or techniques described on this site should only be done with the proper authorization. Unauthorized access to computer systems is illegal.
+Semua konten di situs ini adalah untuk tujuan pendidikan dan peretasan etis. Penggunaan alat atau teknik yang dijelaskan di situs ini hanya boleh dilakukan dengan izin yang sah. Akses tidak sah ke sistem komputer adalah ilegal.
 
 ---
 
-**Cyberblaze.id** – Protecting your digital world, one vulnerability at a time.
+**Cyberblaze.id** – Behind the computer screen, we see a world without borders—a place where every code and system can be changed to create a safer future.
