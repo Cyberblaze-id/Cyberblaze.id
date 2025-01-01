@@ -1,0 +1,1114 @@
+:root {
+  --pink: #ff3333;
+}
+
+/* Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
+/* HTML Styling */
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+
+/* Section Styling */
+section {
+  padding: 2rem 9%;
+}
+
+/* Heading Styling */
+.heading {
+  text-align: center;
+  font-size: 3rem;
+  color: #ff3333;
+  padding: 1rem;
+  margin: 2rem 0;
+  background: #2f2f2f;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.heading span {
+  color: #ffffff;
+}
+
+/* Button Styling */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background: #1a1a1a;
+  color: #fff;
+  padding: .9rem 3.5rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  max-width: 50rem;
+}
+
+.btn:hover {
+  background: #ff3333;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Body Styling */
+body {
+  background-color: #1a1a1a;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 50px; /* Menambahkan ruang agar header tidak menutupi konten */
+}
+
+/* Header Styling */
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  z-index: 100;
+  background: #1a1a1a;
+  box-shadow: 0 0.1rem 0.5rem rgba(51, 51, 51, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: transform 0.3s ease;
+  transform: translateY(0); /* Pastikan posisi awal header dalam tampilan */
+}
+
+.header a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.header .fa-bars {
+  font-size: 3rem;
+  color: #ffffff;
+  cursor: pointer;
+  display: none;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.header .logo h1 {
+  margin-bottom: 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  color: #ff3333;
+}
+
+.header .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.header .navbar ul li {
+  margin: 0 1.5rem;
+  border-radius: 50px;
+}
+
+/* Active Link Styling */
+.header .navbar ul li a.active {
+  color: #ff3333 !important;
+}
+
+/* Hover state untuk link aktif */
+.header .navbar ul li a:hover {
+  color: #ff3333; /* Pastikan warna tetap merah saat hover */
+  border-bottom: 0.2rem solid #ff3333; /* Menjaga border bawah merah saat hover */
+}
+
+/* blogs Section Styling */
+/* blogs Section Styling */
+.blogs .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); /* Fleksibel berdasarkan lebar kolom minimum */
+  gap: 1.5rem;
+  background-color: #2f2f2f;
+  padding: 2rem 2rem;
+}
+
+.blogs .box-container .box {
+  border: 2px solid var(--pink); /* Memberikan garis dengan ketebalan 2px, gaya solid, dan warna dari variabel --pink */
+  color: #ff3333; /* Warna teks tetap seperti semula */
+}
+
+.blogs .box-container .box .image {
+  height: 25rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.blogs .box-container .box .image img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  transition: transform 0.3s ease; /* Tambahkan animasi pada hover */
+}
+
+.blogs .box-container .box:hover .image img {
+  transform: scale(1.2);
+}
+
+.blogs .box-container .box .content {
+  padding: 2rem;
+}
+
+.blogs .box-container .box .content .title {
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.blogs .box-container .box .content .title:hover {
+  color: var(--main-color);
+}
+
+.blogs .box-container .box .content span {
+  color: var(--main-color);
+  display: block;
+  padding-top: 1rem;
+  font-size: 1.8rem;
+}
+
+.blogs .box-container .box .content p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #ccc;
+  padding: 1rem 0;
+}
+
+/* Media Queries untuk Responsivitas */
+
+/* Untuk tablet atau layar dengan lebar maksimum 768px */
+@media (max-width: 768px) {
+  .blogs .box-container {
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); /* Kolom lebih kecil */
+      padding: 1.5rem; /* Kurangi padding */
+  }
+
+  .blogs .box-container .box .content .title {
+      font-size: 1.8rem; /* Perkecil ukuran font untuk tablet */
+  }
+
+  .blogs .box-container .box .content span {
+      font-size: 1.6rem; /* Perkecil ukuran subtitle */
+  }
+
+  .blogs .box-container .box .content p {
+      font-size: 1.2rem; /* Perkecil ukuran paragraf */
+  }
+}
+
+/* Untuk ponsel atau layar dengan lebar maksimum 480px */
+@media (max-width: 480px) {
+  .blogs .box-container {
+      grid-template-columns: 1fr; /* Hanya satu kolom */
+      padding: 1rem; /* Kurangi padding */
+  }
+
+  .blogs .box-container .box {
+      border-width: 1px; /* Kurangi ketebalan border */
+  }
+
+  .blogs .box-container .box .content .title {
+      font-size: 1.5rem; /* Perkecil ukuran font */
+  }
+
+  .blogs .box-container .box .content span {
+      font-size: 1.4rem; /* Perkecil ukuran subtitle */
+  }
+
+  .blogs .box-container .box .content p {
+      font-size: 1rem; /* Perkecil ukuran paragraf */
+  }
+}
+
+ /* About Section Styling */
+.blog1 {
+  background-color: #1a1a1a;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.blog1 .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.blog1 .img-container {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.blog1 .img-container img {
+  width: 100%;
+  border: 5px solid #2f2f2f;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  margin-bottom: 8rem;
+}
+
+.blog1 .img-container h3 {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  color: #ff3333;
+}
+
+.blog1 .content {
+  flex: 1 1 50%;
+  text-align: left;
+}
+
+.blog1 .content h3 {
+  font-size: 2.5rem;
+  color: #ff3333;
+  margin-bottom: 1rem;
+}
+
+.blog1 .content span {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-bottom: 20rem;
+  
+}
+
+.blog1 .content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.blog1 .content ul {
+  margin-left: 2rem;
+  text-align: left;
+}
+
+.blog1 .content ul li {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 0.8rem;
+  list-style: square;
+}
+
+.blog1 .content ol {
+  margin-left: 2rem;
+  text-align: left;
+}
+
+.blog1 .content ol li {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 0.8rem;
+}
+
+.blog1 .content a {
+  color: #e74c3c;
+  text-decoration: none;
+}
+
+.blog1 .content a:hover {
+  text-decoration: underline;
+}
+
+.blog2 {
+  background-color: #1a1a1a;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.blog2 .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.blog2 .img-container {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.blog2 .img-container img {
+  width: 100%;
+  border: 5px solid #2f2f2f;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  margin-bottom: 13rem;
+}
+
+.blog2 .img-container h3 {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  color: #ff3333;
+}
+
+.blog2 .content {
+  flex: 1 1 50%;
+  text-align: left;
+}
+
+.blog2 .content h3 {
+  font-size: 2.5rem;
+  color: #ff3333;
+  margin-bottom: 1rem;
+}
+
+.blog2 .content span {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-bottom: 20rem;
+  
+}
+
+.blog2 .content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.blog2 .content ul {
+  margin-left: 2rem;
+  text-align: left;
+}
+
+.blog2 .content ul li {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 0.8rem;
+  list-style: square;
+}
+
+.blog2 .content ol {
+  margin-left: 2rem;
+  text-align: left;
+}
+
+.blog2 .content ol li {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 0.8rem;
+}
+
+.blog2 .content a {
+  color: #e74c3c;
+  text-decoration: none;
+}
+
+.blog2 .content a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .blog1 .row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .blog1 .img-container {
+    flex: 1 1 100%;
+  }
+
+  .blog1 .img-container img {
+    margin-bottom: 2rem;
+  }
+
+  .blog1 .content {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .blog1 .content h3 {
+    font-size: 2rem;
+  }
+
+  .blog1 .content p, .blog1 .content ul li, .blog1 .content ol li {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .blog1 .content h3 {
+    font-size: 2.2rem;
+  }
+
+  .blog1 .content p, .blog1 .content ul li, .blog1 .content ol li {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .blog1 .row {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .blog1 .content h3 {
+    font-size: 2.5rem;
+  }
+
+  .blog1 .content p {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .blog2 .row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .blog2 .img-container {
+    flex: 1 1 100%;
+  }
+
+  .blog2 .img-container img {
+    margin-bottom: 2rem;
+  }
+
+  .blog2 .content {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .blog2 .content h3 {
+    font-size: 2rem;
+  }
+
+  .blog2 .content p, .blog2 .content ul li, .blog2 .content ol li {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .blog2 .content h3 {
+    font-size: 2.2rem;
+  }
+
+  .blog2 .content p, .blog2 .content ul li, .blog2 .content ol li {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .blog2 .row {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .blog2 .content h3 {
+    font-size: 2.5rem;
+  }
+
+  .blog2 .content p {
+    font-size: 1.2rem;
+  }
+}
+
+.blog3 {
+  background-color: #1a1a1a;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.blog3 .content {
+  flex: 1 1 50%;
+  text-align: left;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  background-color: #2f2f2f;
+  padding: 5rem;
+}
+
+.blog3 .content h3 {
+  font-size: 2.5rem;
+  color: #ff3333;
+  margin-bottom: 1rem;
+}
+
+.blog3 .content span {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-bottom: 20rem;
+}
+
+.blog3 .content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.blog3 .content ul {
+  margin-left: 2rem;
+  text-align: left;
+}
+
+.blog3 .content ul li {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 0.8rem;
+  list-style: square;
+}
+
+.blog3 .content ol {
+  margin-left: 2rem;
+  text-align: left;
+}
+
+.blog3 .content ol li {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 0.8rem;
+}
+
+.blog3 .content a {
+  color: #e74c3c;
+  text-decoration: none;
+}
+
+.blog3 .content a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .blog3 .row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .blog3 .img-container {
+    flex: 1 1 100%;
+  }
+
+  .blog3 .img-container img {
+    margin-bottom: 2rem;
+  }
+
+  .blog3 .content {
+    flex: 1 1 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 3rem;
+    text-align: center;
+  }
+
+  .blog3 .content h3 {
+    font-size: 2rem;
+  }
+
+  .blog3 .content p,
+  .blog3 .content ul li,
+  .blog3 .content ol li {
+    font-size: 1rem;
+  }
+
+  .blog3 .content span {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .blog3 .content {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding: 4rem;
+  }
+
+  .blog3 .content h3 {
+    font-size: 2.2rem;
+  }
+
+  .blog3 .content p,
+  .blog3 .content ul li,
+  .blog3 .content ol li {
+    font-size: 1.1rem;
+  }
+
+  .blog3 .content span {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .blog3 .row {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .blog3 .content {
+    margin-left: 15rem;
+    margin-right: 15rem;
+    padding: 5rem;
+  }
+
+  .blog3 .content h3 {
+    font-size: 2.5rem;
+  }
+
+  .blog3 .content p {
+    font-size: 1.2rem;
+  }
+}
+
+  
+.certificates {
+  min-height: 5rem;
+}
+
+.certificates .controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.certificates .controls .buttons {
+  height: 4rem;
+  width: 15rem;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 4rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.certificates .controls .buttons:hover {
+  background: #ff3333;
+  -webkit-box-shadow: 0 0.5rem 0.5rem rgba(51, 51, 51, 0.3);
+          box-shadow: 0 0.5rem 0.5rem rgba(51, 51, 51, 0.3);
+}
+
+.certificates .controls .active {
+  -webkit-box-shadow: 0 0.5rem 0.5rem rgba(51, 51, 51, 0.3);
+          box-shadow: 0 0.5rem 0.5rem rgba(51, 51, 51, 0.3);
+          background-color: #ff3333;
+          border-radius: .5rem;
+}
+
+.certificates .images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+  width: 100%;
+}
+
+.certificates .images .filter-image {
+  width: 150px;  /* Ukuran lebar gambar */
+  height: 150px; /* Ukuran tinggi gambar */
+  margin: 2rem;
+  object-fit: cover; /* Menjaga gambar terpotong sesuai proporsi */
+  color: #1a1a1a;
+}
+  
+  /* Icons Container Icon Styling */
+  .icons-container .icons {
+    background: #ffffff;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
+  }
+  
+  /* Contact Section Styling */
+  .contact .row {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  
+  .contact .row .content {
+    flex: 1 1 40rem;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    border: .1rem solid rgba(0, 0, 0, .1);
+    background: #333;
+    border-radius: .5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  .contact .content span {
+    font-size: 4.5rem;
+    color: #ff3333;
+    padding: 1rem 0;
+    line-height: 1.5;
+    padding-right: 2.5rem;
+    
+  }
+  
+  .contact .content p {
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding: 1rem 0;
+    line-height: 1.5;
+  }
+  
+  .contact .row .image {
+    flex: 1 1 40rem;
+  }
+  
+  .contact .row .image img {
+    width: 100%;
+  }
+  
+  /* Wa Link Styling */
+  .wa{
+    background: url(../images/Cyberblaze.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 3rem 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  .wa .kata .container{
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+  }
+  
+  .wa .whatsapp-button {
+    padding: 10px 16px;
+    background-color: #ff3333;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 16px;
+    -webkit-box-shadow: 0 3px 3px rgb(0 0 0 / 25%);
+    box-shadow: 0 3px 3px rgb(0 0 0 / 25%);
+    line-height: 24px;
+    margin-top: 1rem;
+  }
+  
+  /* Active Link Styling */
+  .wa .whatsapp-button :hover {
+    color: #1a1a1a;
+  }
+  
+  .wa .button {
+    display: inline-block;
+  }
+  
+  /* Footer Section Styling */
+  .footer {
+    min-height: 5rem;
+    background-color: #2f2f2f;
+  }
+  
+  .footer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .footer .box-container .box {
+    flex: 1 1 25rem;
+  }
+  
+  .footer .box-container .box h3 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+  }
+  
+  .footer .box-container .box a {
+    display: block;
+    color: #999;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+  }
+  
+  .footer .box-container .box a:hover {
+    color: #ff3333;
+    text-decoration: underline;
+  }
+  
+  .footer .box-container .box img {
+    margin-top: 1rem;
+  }
+  
+  .footer .credit {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    font-size: 2rem;
+    color: #ffffff;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+  }
+  
+  .footer .credit span {
+    color: #ff3333;
+  }
+  
+  /* Media Queries */
+
+ 
+/* For screens with max-width of 991px */
+@media (max-width: 991px) {
+  html {
+      font-size: 55%;
+  }
+
+  header {
+      padding: 2rem;
+  }
+
+  section {
+      padding: 2rem;
+  }
+
+}
+
+/* For screens with max-width of 768px (Mobile or smaller tablets) */
+@media (max-width: 768px) {
+  .navbar ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .content {
+      text-align: center;
+  }
+
+  .box-container {
+      grid-template-columns: 1fr;
+  }
+
+  header .fa-bars {
+      display: block;
+  }
+
+  header .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #eee;
+      border-top: .1rem solid rgba(0, 0, 0, .1);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      justify-content: center;
+  }
+
+  header #toggler:checked ~ .navbar {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  header .navbar a {
+      margin: 1.5rem;
+      padding: 1.5rem;
+      background: #fff;
+      border: .1rem solid rgba(0, 0, 0, .1);
+      display: block;
+  }
+}
+
+/* For screens with max-width of 450px (Smaller phones) */
+@media (max-width: 450px) {
+  html {
+      font-size: 50%;
+  }
+
+  .heading {
+      font-size: 3rem;
+  }
+}
+
+/* For screens with max-width of 1024px (iPad/tablet) */
+@media (max-width: 1024px) {
+
+  .certificates .controls .buttons {
+      height: 3.5rem;
+      width: 10rem;
+      font-size: 1.4rem;
+  }
+
+  .certificates .images .filter-image {
+      height: 14rem;
+      width: 100%;
+      max-width: 22rem;
+  }
+}
+
+/* For screens with max-width of 768px (Smaller phones) */
+@media (max-width: 768px) {
+  .certificates {
+      min-height: 5rem;
+  }
+
+  .certificates .controls .buttons {
+      height: 4rem;
+      width: 9rem;
+      font-size: 1.2rem;
+  }
+
+  .certificates .images .filter-image {
+      height: 12rem;
+      width: 100%;
+      max-width: 10rem;
+  }
+
+  .contact .row {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+  }
+
+  .contact .row .content {
+      padding: 3.5rem;
+  }
+
+  .contact .content span {
+      font-size: 2.5rem;
+  }
+
+  .contact .content p {
+      font-size: 1.2rem;
+  }
+  .wa .whatsapp-button {
+    padding: 1px 10px;
+    background-color: #ff3333;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 10px;
+    -webkit-box-shadow: 0 3px 3px rgb(0 0 0 / 25%);
+    box-shadow: 0 3px 3px rgb(0 0 0 / 25%);
+    line-height: 24px;
+    margin-top: 1rem;
+  }
+  .wa .kata h3{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .wa .kata p{
+    font-size: 1rem;
+    padding: 0.2rem;
+  }
+
+  .footer .box-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+  }
+
+  .footer .box-container .box {
+      flex: 1 1 5rem;
+  }
+
+  .footer .box-container .box h3 {
+      font-size: 1.2rem;
+  }
+
+  .footer .box-container .box a {
+      font-size: 0.8rem;
+  }
+
+  .footer .credit {
+      font-size: 0.9rem;
+  }
+}
+
+/* For screens with max-width of 480px (Smaller devices) */
+@media (max-width: 480px) {
+  .header a {
+      font-size: 1.5rem;
+  }
+
+  .header .fa-bars {
+      font-size: 2.5rem;
+  }
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .header .fa-bars {
+    display: block; /* Tampilkan ikon menu di perangkat kecil */
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #1a1a1a;
+    flex-direction: column;
+    width: 100%;
+    display: none; /* Sembunyikan menu secara default */
+    transition: max-height 0.3s ease;
+  }
+
+  .header .navbar.active {
+    display: flex; /* Tampilkan menu saat aktif */
+  }
+
+  .header .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .header .navbar ul li {
+    margin: 1rem 0;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .header a {
+    font-size: 1.5rem; /* Kurangi ukuran teks pada perangkat sangat kecil */
+  }
+
+  .header .fa-bars {
+    font-size: 2.5rem; /* Kurangi ukuran ikon pada perangkat sangat kecil */
+  }
+}
+@media screen and (max-width: 768px) {
+  .header .navbar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a1a1a;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  .header .navbar.active {
+    display: flex;
+  }
+}
