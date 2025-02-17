@@ -35,7 +35,6 @@ Untuk pertanyaan, layanan, atau kolaborasi, Anda bisa menghubungi saya melalui:
 
 - **Email**: [blazeheartinferno@gmail.com](mailto:blazeheartinferno@gmail.com)
 - **Website**: [https://cyberblaze-id.github.io/Cyberblaze.id/](https://cyberblaze-id.github.io/Cyberblaze.id/)
-- **LinkedIn**: [Owner on LinkedIn](https://www.linkedin.com/in/alfindoangan/) 
 
 Jangan ragu untuk menghubungi saya untuk pertanyaan atau permintaan yang berhubungan dengan keamanan siber!
 
